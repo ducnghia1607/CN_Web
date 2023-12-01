@@ -1,0 +1,187 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  padding-top: 20px;
+  background-color: white;
+}
+.container {
+  display: grid;
+  height: auto;
+  grid-template-columns: 250px 1fr;
+  grid-template-rows: 3fr 2fr 100px;
+  row-gap: 10px;
+  column-gap: 10px;
+
+  grid-template-areas:
+    "sidebar content"
+    "comment content"
+    "footer footer";
+}
+.head {
+  color: red;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  font-size: 14px;
+}
+.head-center {
+  text-align: center;
+  padding: 20px;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  display: grid;
+  row-gap: 30px;
+}
+.option {
+  color: rgb(51, 122, 183);
+  border-bottom: 0.5px solid rgb(204, 204, 204);
+  padding: 8px;
+}
+.sidebar-block {
+  background-color: rgb(242, 241, 236);
+}
+#avatar {
+  display: inline-block;
+  border-radius: 50%;
+  vertical-align: middle;
+  width: 40px;
+  height: 40px;
+}
+.title-name {
+  display: inline-block;
+  margin: 10px 35px;
+}
+.name {
+  display: inline-block;
+  margin: 15px 0px 15px 10px;
+  position: absolute;
+}
+.content {
+  grid-area: content;
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: 250px 1fr;
+
+  row-gap: 5px;
+  column-gap: 5px;
+}
+.comment {
+  grid-area: comment;
+}
+.footer {
+  grid-area: footer;
+  background-attachment: fixed;
+  background-image: url("Footer.jpg");
+  background-position: right top;
+  width: auto;
+  height: auto;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: 80px 150px;
+}
+.heading {
+  border-bottom: 0.1px solid rgb(199, 214, 224);
+  text-align: center;
+  padding: 30px;
+}
+.note {
+  border-left: 4px solid orange;
+  text-align: left;
+  padding: 20px;
+}
+.note {
+  font-family: "Times New Roman", Times, serif;
+  margin: 20px 0px;
+}
+#note1 {
+  font-weight: bold;
+  color: orange;
+}
+#note2 {
+  margin-top: 10px;
+}
+#note3 {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.set-infor {
+  padding-left: 10px;
+}
+.title {
+  color: red;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  font-size: 14px;
+  border-bottom: 0.1px solid rgb(70, 90, 103);
+  padding: 15px 0px;
+}
+.option-title {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  margin-top: 15px;
+}
+.label {
+  padding-top: 5px;
+}
+.item {
+  border: 0.1px solid rgb(140, 88, 88);
+  background-color: white;
+  height: 30px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 15px;
+  padding-left: 15px;
+}
+.sex {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 0px 20px;
+}
+#male,
+#female {
+  margin: 10px;
+  display: inline-block;
+}
+
+.text-area {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 16px;
+  padding: 15px 15px;
+}
+.confirm {
+  padding: 15px;
+}
+.press {
+  text-align: right;
+  padding: 20px 200px;
+  font-family: "Times New Roman", Times, serif;
+}
+.box {
+  margin-right: 10px;
+}
+.small-text {
+  font-size: 12px;
+  opacity: 0.6;
+}
+.button {
+  cursor: pointer;
+  color: black;
+  border-radius: 10px;
+  font-size: 16px;
+  text-align: center;
+  background-color: rgb(190, 204, 217);
+  padding: 10px 10px 10px 10px;
+  margin-right: 15px;
+}
+
+.cancel {
+  padding: 13px 35px;
+  border: 1px solid black;
+}

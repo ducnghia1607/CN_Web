@@ -1,0 +1,285 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  padding-top: 20px;
+  background-color: white;
+}
+.container {
+  display: grid;
+  height: auto;
+
+  grid-template-columns: 250px 1fr;
+  grid-template-rows: 1fr 100px;
+  row-gap: 10px;
+  grid-template-areas:
+    "sidebar content"
+    "footer footer";
+}
+.sidebar {
+  grid-area: sidebar;
+  display: grid;
+  row-gap: 30px;
+}
+.content {
+  grid-area: content;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 5px;
+  column-gap: 5px;
+  grid-template-areas:
+    "header header header header"
+    "student student student student"
+    "section1 section1 section1 section1"
+    "study study study study"
+    "study1 study1 study2 study2"
+    "canhan canhan canhan canhan"
+    "father father mother mother"
+    "note note note note";
+}
+.footer {
+  grid-area: footer;
+  background-attachment: fixed;
+  background-image: url("./img/Footer.jpg");
+  background-position: right top;
+  width: auto;
+  height: auto;
+}
+
+.sidebar-block {
+  background-color: rgb(242, 241, 236);
+}
+
+#avatar {
+  display: inline-block;
+  border-radius: 50%;
+  vertical-align: middle;
+  width: 40px;
+  height: 40px;
+}
+.title-name {
+  display: inline-block;
+  margin: 10px 35px;
+}
+.name {
+  display: inline-block;
+  margin: 15px 0px 15px 10px;
+  position: absolute;
+}
+.head {
+  color: red;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  font-size: 14px;
+}
+.head-center {
+  text-align: center;
+  padding: 20px;
+}
+.head-left {
+  text-align: left;
+  border-bottom: 4px solid orange;
+  padding: 16px 0px;
+}
+
+.option {
+  color: rgb(51, 122, 183);
+  border-bottom: 0.5px solid rgb(204, 204, 204);
+  padding: 8px;
+}
+.header {
+  grid-area: header;
+  border-bottom: 0.1px solid rgb(199, 214, 224);
+}
+.student {
+  grid-area: student;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button {
+  padding: 0 20px;
+  display: none;
+}
+
+.button .btn {
+  min-width: 60px;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  padding: 10px 8px;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.button > button {
+  margin: 0 10px;
+}
+.student-section,
+.edit-infor {
+  grid-area: section1;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.edit-infor {
+  display: none;
+}
+.image {
+  text-align: center;
+}
+.student1 {
+}
+.student2 {
+  vertical-align: middle;
+}
+.study {
+  grid-area: study;
+}
+
+.study1 {
+  grid-area: study1;
+  padding: 20px 0;
+}
+
+.study2 {
+  grid-area: study2;
+  padding: 20px 0;
+}
+.canhan {
+  grid-area: canhan;
+}
+.father {
+  grid-area: father;
+  padding: 20px 0;
+}
+.mother {
+  grid-area: mother;
+  padding: 20px 0;
+}
+.note {
+  grid-area: note;
+  text-align: left;
+  font-family: "Times New Roman", Times, serif;
+  padding: 16px 0px;
+}
+
+.student-icon {
+  display: inline-block;
+}
+.icon {
+  display: inline-block;
+  margin-left: 5px;
+}
+.img {
+  width: 180px;
+  /* height: 220px; */
+  margin: 25px 0px 15px 0px;
+  box-shadow: 10px 10px 10px rgb(168, 218, 235),
+    6px 8px 5px rgba(67, 23, 6, 0.19);
+  object-fit: cover;
+}
+
+.img img {
+  width: 180px;
+  height: 220px;
+  object-fit: cover;
+}
+
+.student1 input {
+  margin-bottom: 10px;
+  font-family: "Times New Roman", Times, serif;
+  outline: none;
+  min-width: 200px;
+  margin-left: 10px;
+}
+
+.student2 input {
+  margin-bottom: 10px;
+  font-family: "Times New Roman", Times, serif;
+  outline: none;
+  max-width: 200px;
+  margin-left: 10px;
+}
+
+.inforcontent {
+  display: inline-block;
+  padding: 10px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+}
+
+.email {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  padding-left: 10px;
+}
+
+.student1 label,
+.student2 label,
+.label {
+  display: inline-block;
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+  padding-left: 30px;
+  margin-bottom: 10px;
+}
+
+/* Phần này là phản hồi từ màn hình khi ở các thiết bị khác nhau: Như PC, Ipad, Mobile */
+@media (max-width: 1000px) {
+  .content {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "header header"
+      "student student"
+      "image image"
+      "student1 student2"
+      "study study"
+      "study1 study2"
+      "canhan canhan"
+      "father mother"
+      "note note";
+  }
+  .container {
+    height: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 80px;
+    grid-template-areas:
+      "content"
+      "sidebar"
+      "footer";
+  }
+}
+
+@media (max-width: 600px) {
+  .content {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "header"
+      "student"
+      "image"
+      "student1"
+      "student2"
+      "study"
+      "study1"
+      "study2"
+      "canhan"
+      "father"
+      "mother"
+      "note";
+  }
+
+  .container {
+    height: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr 50px;
+    grid-template-areas:
+      "content"
+      "sidebar"
+      "footer";
+  }
+}

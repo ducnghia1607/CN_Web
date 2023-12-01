@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="updateinfor.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar">
+        <div class="sidebar-block">
+          <div class="title-name">
+            <img src="avata.png" alt="avatar" id="avatar" />
+            <p class="name head">Nguyễn Đức Nghĩa</p>
+          </div>
+          <p class="option">Thư báo</p>
+          <p class="option">Đổi mật khẩu</p>
+          <p class="option">Cấp lại mật khẩu</p>
+          <p class="option">Thoát đăng nhập</p>
+          <p class="option">Thông tin mật khẩu Email cấp mới</p>
+          <p class="option">Xác nhận khai báo y tế</p>
+        </div>
+        <div class="sidebar-block">
+          <p class="head head-center">QUẢN LÝ HỒ SƠ SINH VIÊN</p>
+          <p class="option">Thông tin sinh viên</p>
+          <p class="option">Cập nhật thông tin cá nhân</p>
+          <p class="option">Thông tin lớp sinh viên</p>
+        </div>
+        <div class="sidebar-block">
+          <p class="head head-center">ĐÀO TẠO</p>
+          <p class="option">Chương trình đào tạo</p>
+          <p class="option">Kế hoạch học tập</p>
+          <p class="option">Kết quả học tập</p>
+          <p class="option">Đồ án tốt nghiệp</p>
+          <p class="option">Thời khoá biểu tạm thời</p>
+        </div>
+        <div class="sidebar-block">
+          <p class="head head-center">TƯ VẤN TRỰC TUYẾN</p>
+          <p class="option">Hỏi đáp - Tư vấn trực tuyến</p>
+        </div>
+        <div class="sidebar-block">
+          <p class="head head-center">TÀI CHÍNH HỌC VỤ</p>
+          <p class="option">Thông tin công nợ học phí</p>
+          <p class="option">Thanh toán học phí trực tuyến</p>
+        </div>
+        <div class="sidebar-block">
+          <p class="head head-center">DỊCH VỤ HÀNH CHÍNH</p>
+          <p class="option">ĐK cấp giấy tờ</p>
+        </div>
+      </div>
+      <div class="content">
+        <div class="header">
+          <div class="heading head">CẬP NHẬT THÔNG TIN CÁ NHÂN</div>
+          <div class="note">
+            <p id="note1">Chú ý</p>
+            <p id="note2">
+              Để đối chiếu hồ sơ sinh viên và cập nhật thông tin chính các của
+              sinh viên đang học tập tron trường, thông tin ghi trên bằng cấp và
+              bảng điểm, đề nghị các em kê khai đầy đủ các thông tin dưới đây:
+            </p>
+            <p id="note3">
+              Các thông dưới đây các em điền tiếng việt có dấu đầy đủ.
+            </p>
+          </div>
+        </div>
+        <div class="update">
+          <form>
+            <div class="set-infor">
+              <p class="title">Thông tin cá nhân</p>
+              <div class="option-title">
+                <label class="label">Họ và tên:</label>
+                <input
+                  type="text"
+                  class="item"
+                  value="Nguyễn Đức Nghĩa"
+                  readonly
+                />
+              </div>
+              <div class="option-title">
+                <label class="label">Giới tính:</label>
+                <div class="sex">
+                  <div>
+                    <input
+                      name="gender"
+                      type="radio"
+                      class="label"
+                      id="male"
+                      checked
+                    />Nam
+                  </div>
+                  <div>
+                    <input
+                      name="gender"
+                      type="radio"
+                      class="label"
+                      id="female"
+                    />Nữ
+                  </div>
+                </div>
+              </div>
+              <div class="option-title">
+                <label class="label">Dân tộc:</label>
+                <input type="text" class="item" value="Kinh" />
+                <p></p>
+                <p class="small-text">ví dụ: Kinh</p>
+              </div>
+              <div class="option-title">
+                <label class="label">Tôn giáo:</label>
+                <input type="text" class="item" value="Không" />
+                <p></p>
+                <p class="small-text">Không có ghi: Không</p>
+              </div>
+
+              <div class="option-title">
+                <label class="label">Quốc tịch:</label>
+                <select class="item">
+                  <option>Vietnam</option>
+                  <option>Laos</option>
+                  <option>China</option>
+                  <option>Campuchia</option>
+                  <option>Australia</option>
+                </select>
+              </div>
+              <div class="option-title">
+                <label class="label">Nơi sinh:</label>
+                <select class="item">
+                  <option>Bắc Ninh</option>
+                  <option>Hà Nội</option>
+                  <option>Đà Nẵng</option>
+                  <option>TP.HCM</option>
+                  <option>Hạ Long</option>
+                  <option>Quảng Ninh</option>
+                </select>
+              </div>
+              <div class="option-title">
+                <label class="label">Năm TN cấp 3:</label>
+                <input type="text" class="item" value="2020" />
+                <p></p>
+                <p class="small-text">ví dụ: 2015</p>
+              </div>
+              <div class="option-title">
+                <label class="label">Trường cấp 3:</label>
+                <input
+                  type="text"
+                  class="item"
+                  value="Trường THPT Tiên Du số 1"
+                />
+                <p></p>
+                <p class="small-text">ví dụ: Trần Phú - Hà Nội</p>
+              </div>
+              <div class="option-title">
+                <label for="" class="label">Đối tượng:</label>
+
+                <select class="item">
+                  <option>Không có</option>
+                  <option>CTB07(61%-80%)</option>
+                  <option>CTB06(21%-60%)</option>
+                  <option>Con CB bị TNLĐ</option>
+                  <option>Chất độc hoá học</option>
+                  <option>Lưu học sinh tự túc</option>
+                  <option>Lưu học sinh được miễn giảm 100%</option>
+                </select>
+                <p></p>
+
+                <p class="small-text">
+                  Đối tượng ưu tiên, không có chọn 'Không có'
+                </p>
+              </div>
+              <div class="option-title">
+                <label class="label">Số CMND/Hộ chiếu:</label>
+                <input type="number" class="item" value="01294893022" />
+              </div>
+              <div class="option-title">
+                <label class="label">Ngày cấp:</label>
+                <input type="date" class="item" value="1/1/2023" />
+              </div>
+              <div class="option-title">
+                <label class="label">Nơi cấp:</label>
+                <input type="text" class="item" value="Bắc Ninh" />
+                <p></p>
+                <p class="small-text">Ghi tên tỉnh hoặc thành phố</p>
+              </div>
+              <div class="option-title">
+                <label class="label">Số điện thoại:</label>
+                <input type="text" class="item" value="039999999" />
+                <p></p>
+                <p class="small-text">Không có ghi: Không có</p>
+              </div>
+              <div class="option-title">
+                <label class="label">Email:</label>
+                <input type="email" class="item" value="nghia.nd@gmail.com" />
+                <p></p>
+                <p class="small-text">Email cá nhân</p>
+              </div>
+            </div>
+
+            <div class="set-infor">
+              <p class="title">Địa chỉ hiện tại</p>
+              <div class="option-title">
+                <label class="label">Tỉnh/Thành phố:</label>
+                <select class="item">
+                  <option>Tỉnh Bắc Ninh</option>
+                  <option>Tỉnh Đà Nẵng</option>
+                  <option>Thành phố Hồ Chí Minh</option>
+                  <option>Tỉnh Nghệ An</option>
+                  <option>Tỉnh Quảng Ninh</option>
+                </select>
+              </div>
+              <div class="option-title">
+                <label class="label">Quận/Huyện:</label>
+                <select class="item">
+                  <option>Huyện Tiên Dh</option>
+                  <option>Quận Hai Bà Trưng</option>
+                  <option>Quận Cầu Giấy</option>
+                  <option>Quận Hà Đông</option>
+                  <option>Quận Đống Đa</option>
+                </select>
+              </div>
+              <div class="option-title">
+                <label class="label">Xã/Phường/TT:</label>
+                <select class="item">
+                  <option>Minh Đạo</option>
+                  <option>Gia Lâm</option>
+                  <option>Long Biên</option>
+                  <option>Thượng Thanh</option>
+                  <option>Quan Nhân</option>
+                </select>
+              </div>
+              <div class="option-title">
+                <label class="label">Số nhà-đường/thôn:</label>
+                <input type="text" class="item" value="Thôn Nghĩa Chỉ" />
+                <p></p>
+                <p class="small-text">ghi rõ số nhà, tên đường, thôn xóm</p>
+              </div>
+            </div>
+            <div class="set-infor">
+              <p class="title">Hộ Khẩu</p>
+              <div class="option-title">
+                <label class="label">Tỉnh/Thành phố:</label>
+                <select class="item">
+                  <option>Tỉnh Bắc Ninh</option>
+                  <option>Thành phố Đà Nẵng</option>
+                  <option>Thành phố Hồ Chí Minh</option>
+                  <option>Tỉnh Nghệ An</option>
+                  <option>Tỉnh Quảng Ninh</option>
+                </select>
+              </div>
+              <div class="option-title">
+                <label class="label">Quận/Huyện:</label>
+                <select class="item">
+                  <option>Huyện Tiên Du</option>
+                  <option>Quận Hai Bà Trưng</option>
+                  <option>Quận Cầu Giấy</option>
+                  <option>Quận Hà Đông</option>
+                  <option>Quận Đống Đa</option>
+                </select>
+              </div>
+              <div class="option-title">
+                <label class="label">Xã/Phường/TT:</label>
+                <select class="item">
+                  <option>Minh Đạo</option>
+                  <option>Gia Thuỵ</option>
+                  <option>Long Biên</option>
+                  <option>Thượng Thanh</option>
+                  <option>Quan Nhân</option>
+                </select>
+              </div>
+              <div class="option-title">
+                <label class="label">Số nhà-đường/thôn:</label>
+                <input type="text" class="item" value="Thôn Nghĩa Chỉ" />
+              </div>
+            </div>
+            <div class="set-infor">
+              <p class="title">Thông tin về bố</p>
+              <div class="option-title">
+                <label class="label">Họ tên:</label>
+                <input type="text" class="item" value="Nguyễn Đức Nam" />
+              </div>
+              <div class="option-title">
+                <label class="label">Năm sinh:</label>
+                <input type="number" class="item" value="1973" />
+                <p></p>
+                <p class="small-text">Ghi năm sinh, ví dụ: 1973</p>
+              </div>
+              <div class="option-title">
+                <label class="label">Nghề nghiệp:</label>
+                <input type="text" class="item" value="Kinh Doanh" />
+              </div>
+              <div class="option-title">
+                <label class="label">Số điện thoại:</label>
+                <input type="text" class="item" value="Không có" />
+                <p></p>
+                <p class="small-text">Không có ghi: Không có</p>
+              </div>
+              <div class="option-title">
+                <label class="label">Email:</label>
+                <input type="text" class="item" value="Không có" />
+                <p></p>
+                <p class="small-text">Không có ghi: Không có</p>
+              </div>
+            </div>
+            <div class="set-infor">
+              <p class="title">Thông tin về mẹ</p>
+              <div class="option-title">
+                <label class="label">Họ tên:</label>
+                <input type="text" class="item" value="Nguyễn Thị Phương" />
+              </div>
+              <div class="option-title">
+                <label class="label">Năm sinh:</label>
+                <input type="number" class="item" value="1973" />
+                <p></p>
+                <p class="small-text">Ghi năm sinh, ví dụ: 1973</p>
+              </div>
+              <div class="option-title">
+                <label class="label">Nghề nghiệp:</label>
+                <input type="text" class="item" value="Kinh Doanh" />
+              </div>
+              <div class="option-title">
+                <label class="label">Số điện thoại:</label>
+                <input type="text" class="item" value="Không có" />
+                <p></p>
+                <p class="small-text">Không có ghi: Không có</p>
+              </div>
+              <div class="option-title">
+                <label class="label">Email:</label>
+                <input type="email" class="item" value="Không có" />
+                <p></p>
+                <p class="small-text">Không có ghi: Không có</p>
+              </div>
+            </div>
+            <div class="set-infor">
+              <p class="title">Địa chỉ liên hệ khi cần thiết (bắt buộc)</p>
+              <div class="option-title">
+                <div></div>
+                <textarea cols="30" rows="10" class="text-area">
+Thôn Nghĩa Chỉ, Xã Minh Đạo , Huyện Tiên Du , Tỉnh Bắc Ninh</textarea
+                >
+                <p></p>
+                <p class="small-text">Trong trường hợp khi cần báo tin</p>
+              </div>
+            </div>
+            <div class="set-infor">
+              <p class="title">Xác nhận</p>
+              <div class="confirm">
+                <input type="checkbox" class="box" />
+                <label
+                  >Tôi xin cam đoan những lời khai trên đây là đúng sự thật và
+                  chịu trách nhiệm cho những lời khai này.</label
+                >
+                <p></p>
+                <p class="small-text">Vui lòng xác nhận trước khi Submit!</p>
+              </div>
+            </div>
+            <div class="press set-infor">
+              <button
+                style="width: 100px"
+                type="submit"
+                class="button"
+                id="ok"
+                onclick="alert('Thông tin cập đã được lưu! Vui lòng chờ xét duyệt')"
+              >
+                OK
+              </button>
+
+              <a
+                href="index.html"
+                class="cancel button"
+                target="_blank"
+                style="width: 100px"
+                >Cancel</a
+              >
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="comment"></div>
+      <div class="footer"></div>
+    </div>
+  </body>
+</html>
